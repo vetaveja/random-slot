@@ -19,7 +19,7 @@ export default function RandomSlot(props) {
                     
                     onClick={() => {
                         generateRandomSlot(slots);
-                        window.open('https://twitter.com/intent/tweet/?text=' + encodeURIComponent(slot.slot + '--' + slot.provider))
+                        window.open('https://twitter.com/intent/tweet/?text=' + encodeURIComponent('My slot of the day is ' + slot.slot + ' -- ' + slot.provider))
                     }}
                     type="submit"><i className="fab fa-twitter"></i> Share My Fate</button>
             </div>
